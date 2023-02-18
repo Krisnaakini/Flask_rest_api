@@ -11,8 +11,8 @@ def home():
             "age": 25}
     return render_template("home.html", user_obj=user)
 
-@app.route("/rest")
-def rest():
+@app.route("/users")
+def get_users():
     return [
     {"name":"Ram", "email":"Ram@gmail.com"},
     {"name":"Bob", "email":"bob32@gmail.com"}
